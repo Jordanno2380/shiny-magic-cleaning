@@ -1,105 +1,80 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shiny Magic Cleaning</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f8f8;
-    }
-    header {
-      background: #4db6ac;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #00796b;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 14px 20px;
-      display: block;
-    }
-    nav a:hover {
-      background: #004d40;
-    }
-    section {
-      padding: 20px;
-    }
-    .service-box {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    footer {
-      background: #004d40;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Shiny Magic Cleaning</h1>
-    <p>Professional & Affordable Cleaning Services in Brisbane</p>
+    <div class="container">
+      <h1>Shiny Magic Cleaning</h1>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-box">
-      <h3>🧼 Residential Cleaning</h3>
-      <p>Thorough cleaning for apartments, houses, and shared living spaces.</p>
-    </div>
-    <div class="service-box">
-      <h3>🏠 End of Lease Cleaning</h3>
-      <p>Bond-back guaranteed cleaning to meet real estate standards.</p>
-    </div>
-    <div class="service-box">
-      <h3>🧽 Kitchen & Bathroom Detail</h3>
-      <p>Deep scrubbing, polishing, and sanitising for hygiene-focused areas.</p>
-    </div>
-    <div class="service-box">
-      <h3>💼 Office Cleaning</h3>
-      <p>Reliable, scheduled cleaning for small to medium office spaces.</p>
+  <section class="hero">
+    <div class="container">
+      <h2>Your Local Brisbane Cleaning Experts</h2>
+      <p>Reliable, affordable, and sparkling clean results every time.</p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
     </div>
   </section>
 
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <ul>
-      <li>Studio / 1 Bedroom - from $99</li>
-      <li>2 Bedroom - from $149</li>
-      <li>3 Bedroom - from $199</li>
-      <li>End of Lease Cleaning - Quote based</li>
-    </ul>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>House Cleaning</li>
+        <li>Bond/End of Lease Cleaning</li>
+        <li>Office Cleaning</li>
+        <li>Deep Cleaning</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Email:</strong> <a href="mailto:jordan@shinymagiccleaning.com">jordan@shinymagiccleaning.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:0435710871">0435 710 871</a></p>
-    <p><strong>Service Area:</strong> Brisbane (All Areas)</p>
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2>Customer Reviews</h2>
+      <blockquote>
+        "Amazing service! My house looks spotless. Highly recommended!"
+        <footer>- Sarah, North Lakes</footer>
+      </blockquote>
+      <blockquote>
+        "Very professional and friendly. Will book again!"
+        <footer>- Michael, Chermside</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="mailto:jordan@shinymagiccleaning.com" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Shiny Magic Cleaning. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Shiny Magic Cleaning. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
